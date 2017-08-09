@@ -11,9 +11,11 @@ def main():
         else:
             try:
                 answer = list(dns.resolver.query(host[1], rdtype=dns.rdatatype.AAAA))[0]
+                last_answer = answer
             except Exception as e:
-                if host[1].endswith("googlevideo") or host[1].endswith("gvt1.com"):
-                    answer = "2404:6800:4008:c02::11"
+                print(e)
+                if host[1].endswith("googlevideo.com") or host[1].endswith("gvt1.com"):
+                    answer = last_answer
                 else:
                     answer = host[0]
             o.write("%-30s %s\n" % (answer, host[1]))

@@ -8,4 +8,5 @@
 
 Origin hosts come from [racaljk/hosts](https://github.com/racaljk/hosts).
 
-The domin keeps origin IPv4 address if there is no IPv6 address available. But if the domin ends with googlevideo.com or gtv1.com, it's address will be set to 2404:6800:4008:c02::11.
+The domain keeps its origin IPv4 address if there is no IPv6 address available. But if the domain ends with googlevideo.com or gtv1.com, its address will be set to previous available v6 address.
+
